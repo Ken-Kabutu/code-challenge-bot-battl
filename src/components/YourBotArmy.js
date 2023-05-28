@@ -19,7 +19,7 @@ function YourBotArmy({ army, releaseFromArmy, dischargeFromArmy }) {
             <div className="column" key={bot.id}>
               <BotCard 
                 bot={bot} 
-                releaseBot={() => releaseFromArmy(bot)}
+                releaseFromArmy={() => handleRelease(bot)}
                 dischargeBot={() => handleDischarge(bot)}
               />
               </div>
